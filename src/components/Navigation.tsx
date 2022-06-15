@@ -6,7 +6,7 @@ const Container = styled.div`
   display: block;
   background-color: #adb5bd;
   border-radius: 15px;
-  width: 80vw;
+  width: 100vw;
   margin: 10px auto;
   margin-bottom: 0;
 `;
@@ -21,7 +21,7 @@ const Menu = styled.div`
 `;
 const Nav = styled.div`
   display: block;
-  width: 20vw;
+  width: 25vw;
   padding: 10px 0;
   text-align: center;
   font-size: 24px;

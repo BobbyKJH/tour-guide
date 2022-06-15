@@ -29,7 +29,7 @@ function ExchangePage() {
         <Select>
           {data.list.map((exchange: any) => (
             <Option style={{ textAlign: "center" }}>
-              {exchange.currencyname} rrr; {exchange.sign}
+              {exchange.currencyname} {exchange.sign}
             </Option>
           ))}
         </Select>

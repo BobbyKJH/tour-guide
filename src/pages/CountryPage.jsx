@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import Country from "../components/Country";
+import CountryList from "../components/country/CountryList";
 import { asia, eu, america, africa, oceania } from "../store/countrySlice";
 
 const Container = styled.div`
   display: block;
   margin: 0 auto;
-  width: 100vw;
 `;
-const CountryList = styled.div`
+const CountryBtn = styled.div`
   display: block;
   text-align: center;
 `;
@@ -23,17 +22,18 @@ function CountryPage() {
   const America = () => dispatch(america());
   const Africa = () => dispatch(africa());
   const Oceania = () => dispatch(oceania());
+
   return (
     <Container>
-      <CountryList>
+      <CountryBtn>
         <button onClick={Asia}>asia</button>
         <button onClick={Eu}>eu</button>
         <button onClick={America}>america</button>
         <button onClick={Africa}>africa</button>
         <button onClick={Oceania}>oceania</button>
-      </CountryList>
-      {country}
-      <Country country={country} />
+      </CountryBtn>
+
+      <CountryList country={country} />
     </Container>
   );
 }

@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Country from "./Country";
 
-function Country({ country }) {
+function CountryList({ country }) {
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -11,11 +12,11 @@ function Country({ country }) {
   }, [country]);
   return (
     <div>
-      {list.map((co) => (
-        <div key={co.id}>{co.id}</div>
+      {list.map((country) => (
+        <Country />
       ))}
     </div>
   );
 }
 
-export default Country;
+export default CountryList;

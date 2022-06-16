@@ -4,30 +4,27 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: block;
-  background-color: #adb5bd;
-  border-radius: 15px;
-  width: 100vw;
-  margin: 10px auto;
-  margin-bottom: 0;
+  background-color: gray;
 `;
 const Title = styled.div`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 15px 0;
+  height: 80px;
   font-size: 48px;
 `;
 const Menu = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 const Nav = styled.div`
   display: block;
-  width: 25vw;
-  padding: 10px 0;
   text-align: center;
+  padding: 15px 0;
   font-size: 24px;
-  &:hover {
-    text-decoration: underline;
-  }
+  width: 20vw;
 `;
 
 function Navigation() {

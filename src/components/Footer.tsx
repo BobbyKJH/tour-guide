@@ -4,6 +4,10 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   height: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
 `;
 const Home = styled.div`
   display: block;

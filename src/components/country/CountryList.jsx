@@ -2,20 +2,22 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Country from "./Country";
 
-function CountryList({ country }) {
+function CountryList({ countryList }) {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    axios.get(country).then((res) => {
+    axios.get(countryList).then((res) => {
       setList(res.data.data);
     });
-  }, [country]);
+  }, [countryList]);
   return (
-    <div>
-      {list.map((country) => (
-        <Country />
-      ))}
-    </div>
+    <>
+      <div style={{ textAlign: "center" }}>
+        {list.map((map) => (
+          <Country key={map.id} title={map.country_nm} img={map.download_url} />
+        ))}
+      </div>
+    </>
   );
 }
 

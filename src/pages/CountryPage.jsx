@@ -8,9 +8,19 @@ const Container = styled.div`
   display: block;
   margin: 0 auto;
 `;
-const CountryBtn = styled.div`
-  display: block;
-  text-align: center;
+const CountryMenu = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Btn = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 `;
 
 function CountryPage() {
@@ -25,15 +35,16 @@ function CountryPage() {
 
   return (
     <Container>
-      <CountryBtn>
-        <button onClick={Asia}>asia</button>
-        <button onClick={Eu}>eu</button>
-        <button onClick={America}>america</button>
-        <button onClick={Africa}>africa</button>
-        <button onClick={Oceania}>oceania</button>
-      </CountryBtn>
-
-      <CountryList country={country} />
+      <CountryMenu>
+        <Btn onClick={Asia}>아시아</Btn>
+        <Btn onClick={Eu}>유럽</Btn>
+        <Btn onClick={America}>아메리카</Btn>
+      </CountryMenu>
+      <CountryMenu>
+        <Btn onClick={Africa}>아프리카</Btn>
+        <Btn onClick={Oceania}>오세아니아</Btn>
+      </CountryMenu>
+      <CountryList countryList={country} />
     </Container>
   );
 }

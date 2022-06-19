@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
-  display: flex;
+  display: block;
+  /* position: fixed; */
   height: 100px;
   bottom: 0;
-  left: 0;
-  right: 0;
+  /* left: 0; */
+  /* right: 0; */
+  width: 100%;
   background-color: #000;
 `;
 const Home = styled.div`

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -26,7 +27,9 @@ function Country({ title, img }) {
   return (
     <Container>
       <Img src={img} />
-      <Title>{title}</Title>
+      <Title>
+        <Link to={`/country/${title}`}>{title}</Link>
+      </Title>
     </Container>
   );
 }

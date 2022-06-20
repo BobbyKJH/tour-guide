@@ -1,11 +1,14 @@
+// React
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+// Styled Components
 const Container = styled.div`
   display: block;
   background-color: gray;
 `;
+// Home Name
 const Title = styled.div`
   display: flex;
   justify-content: center;
@@ -14,11 +17,13 @@ const Title = styled.div`
   height: 80px;
   font-size: 48px;
 `;
+// Side Bar
 const Menu = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
+// 사이트 Nav
 const Nav = styled.div`
   display: block;
   text-align: center;

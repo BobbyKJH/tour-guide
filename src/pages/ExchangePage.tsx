@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { useQuery } from "react-query";
 import { CurrencyExchange } from "../api";
+import Exchange from "../components/exchange/Exchange";
 
+// Styled components
 const Select = styled.select`
   display: block;
   margin: 0 auto;
@@ -10,29 +12,29 @@ const Select = styled.select`
   width: 50vw;
   height: 5vh;
   font-size: 18px;
-`;
-
-const Option = styled.option`
-  text-align: center;
-  font-size: 30px;
+  margin-top: 10px;
 `;
 
 function ExchangePage() {
   const { isLoading, data } = useQuery("exchange", CurrencyExchange);
 
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       {isLoading ? (
         "Loading"
       ) : (
-        <Select>
-          {data.list.map((exchange: any) => (
-            <Option style={{ textAlign: "center" }}>
-              {exchange.currencyname} {exchange.sign}
-            </Option>
-          ))}
-        </Select>
+        <>
+          <Select>
+            {data.list.map((exchange: any) => (
+              <Exchange
+                key={exchange.id}
+                currencyName={exchange.currencyname}
+                sign={exchange.sign}
+              />
+            ))}
+          </Select>
+        </>
       )}
     </div>
   );

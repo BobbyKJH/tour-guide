@@ -7,12 +7,9 @@ const Option = styled.option`
   display: block;
   text-align: center;
 `;
+
 function Exchange({ currencyName, sign }) {
-  return (
-    <Option>
-      {currencyName} {sign}
-    </Option>
-  );
+  return <Option>111</Option>;
 }
 
 export default Exchange;

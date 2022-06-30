@@ -7,10 +7,32 @@ function Header() {
     <HeaderStyle>
       <div>
         <h1>Guide</h1>
-        <h2>추천</h2>
-        <h2>대륙</h2>
-        <h2>나라</h2>
-        <h2>환전</h2>
+        <h2>
+          <span>추천</span>
+        </h2>
+        <h2>
+          <span>대륙</span>
+          <div>
+            <nav>1</nav>
+            <nav>1</nav>
+            <nav>1</nav>
+            <nav>1</nav>
+            <nav>1</nav>
+          </div>
+        </h2>
+        <h2>
+          <span>나라</span>
+          <div>
+            <nav>1</nav>
+            <nav>1</nav>
+            <nav>1</nav>
+            <nav>1</nav>
+            <nav>1</nav>
+          </div>
+        </h2>
+        <h2>
+          <span>환전</span>
+        </h2>
       </div>
     </HeaderStyle>
   );

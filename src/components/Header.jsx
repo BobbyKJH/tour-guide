@@ -5,35 +5,31 @@ import { HeaderStyle } from "../style/HeaderStyle";
 function Header() {
   return (
     <HeaderStyle>
-      <div>
-        <h1>Guide</h1>
+      <header>
+        <h1>여행</h1>
         <h2>
           <span>추천</span>
         </h2>
         <h2>
           <span>대륙</span>
-          <div>
-            <nav>1</nav>
-            <nav>1</nav>
-            <nav>1</nav>
-            <nav>1</nav>
-            <nav>1</nav>
-          </div>
+          <nav>아시아</nav>
+          <nav>유럽</nav>
+          <nav>아메리카</nav>
+          <nav>오세아니아</nav>
+          <nav>아프리카</nav>
         </h2>
         <h2>
           <span>나라</span>
-          <div>
-            <nav>1</nav>
-            <nav>1</nav>
-            <nav>1</nav>
-            <nav>1</nav>
-            <nav>1</nav>
-          </div>
+          <nav>아시아</nav>
+          <nav>유럽</nav>
+          <nav>아메리카</nav>
+          <nav>오세아니아</nav>
+          <nav>아프리카</nav>
         </h2>
         <h2>
           <span>환전</span>
         </h2>
-      </div>
+      </header>
     </HeaderStyle>
   );
 }
